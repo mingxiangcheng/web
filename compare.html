@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+	function compare()
+	{
+		var c1=document.getElementById("c1").value;
+		var c2=document.getElementById("c2").value;
+		if(c1==c2)
+			//document.write(c1+"="+c2);
+			alert(c1+"="+c2);
+		else
+			//document.write(c1+"!="+c2);
+			alert(c1+"!="+c2);
+		}
+</script>
+<title>字符串比较</title>
+</head>
+
+<body>
+	请输入第一个字符：
+	<input type="text" id="c1" />
+   	<br />
+    请输入第二个字符：
+    <input type="text" id="c2" />
+    <br />
+    <input type="button" onclick="compare()" value="点击比较"/>
+</body>
+</html>
